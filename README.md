@@ -1,2 +1,2 @@
-# automech
-central repository for Auto-Mech codes
+# AutoMech
+central repository for AutoMech codes (currently only for documentation purposes)
