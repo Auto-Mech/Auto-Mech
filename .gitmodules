@@ -1,0 +1,18 @@
+[submodule "autoparse"]
+	path = autoparse
+	url = https://github.com/Auto-Mech/autoparse
+[submodule "automol"]
+	path = automol
+	url = https://github.com/Auto-Mech/automol
+[submodule "elstruct"]
+	path = elstruct
+	url = https://github.com/Auto-Mech/elstruct
+[submodule "interfaces"]
+	path = interfaces
+	url = https://github.com/Auto-Mech/interfaces
+[submodule "autofile"]
+	path = autofile
+	url = https://github.com/Auto-Mech/autofile
+[submodule "moldriver"]
+	path = moldriver
+	url = https://github.com/Auto-Mech/moldriver
