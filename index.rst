@@ -31,22 +31,11 @@ Key workhorses:
 Driver:
     * moldriver
 
-Major (higher-level) libraries:
+Libraries:
     * autofile: file system
     * automol: molecular descriptors
-    * interfaces: a hodge-podge of interaces to various programs
-
-Minor (lower-level) libraries/scripts/programs:
     * autoparse: parsing
-    * OneDMin
-    * VaReCoF
-    * NST
-    * DiNT
-    * x2z
-    * ProjRot
-    * RateFit
-    * PAC99
-    * ThermP
+    * interfaces: a hodge-podge of interaces to various programs
 
 .. toctree::
     :maxdepth: 2
