@@ -1,18 +1,21 @@
-[submodule "autoparse"]
-	path = autoparse
-	url = https://github.com/Auto-Mech/autoparse
-[submodule "automol"]
-	path = automol
-	url = https://github.com/Auto-Mech/automol
-[submodule "elstruct"]
-	path = elstruct
-	url = https://github.com/Auto-Mech/elstruct
-[submodule "interfaces"]
-	path = interfaces
-	url = https://github.com/Auto-Mech/interfaces
-[submodule "autofile"]
-	path = autofile
-	url = https://github.com/Auto-Mech/autofile
-[submodule "moldriver"]
-	path = moldriver
-	url = https://github.com/Auto-Mech/moldriver
+[submodule "repos/MESS"]
+	path = repos/MESS
+	url = https://github.com/Auto-Mech/MESS.git
+[submodule "repos/moldriver"]
+	path = repos/moldriver
+	url = https://github.com/Auto-Mech/moldriver.git
+[submodule "repos/automol"]
+	path = repos/automol
+	url = https://github.com/Auto-Mech/automol.git
+[submodule "repos/autofile"]
+	path = repos/autofile
+	url = https://github.com/Auto-Mech/autofile.git
+[submodule "repos/autoparse"]
+	path = repos/autoparse
+	url = https://github.com/Auto-Mech/autoparse.git
+[submodule "repos/elstruct"]
+	path = repos/elstruct
+	url = https://github.com/Auto-Mech/elstruct.git
+[submodule "repos/interfaces"]
+	path = repos/interfaces
+	url = https://github.com/Auto-Mech/interfaces.git
