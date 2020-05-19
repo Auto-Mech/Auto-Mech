@@ -1,2 +1,3 @@
-# AutoMech
-central repository for AutoMech codes (currently only for documentation purposes)
+# AutoMech Docs
+
+central repository for editing documentation for AutoMech codes
