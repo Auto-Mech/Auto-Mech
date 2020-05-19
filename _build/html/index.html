@@ -14,7 +14,7 @@
     <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="MESS" href="repos/MESS/docs/index.html" />
+    <link rel="next" title="moldriver" href="repos/moldriver/docs/index.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -36,45 +36,50 @@
 <div class="section" id="what-is-auto-mech">
 <h2>What is Auto Mech?<a class="headerlink" href="#what-is-auto-mech" title="Permalink to this headline">¶</a></h2>
 <p>A high-level description of the code goes here.</p>
-<p>We can include figures as follows:</p>
 <div class="figure align-default">
 <a class="reference internal image-reference" href="_images/paper-graphic.png"><img alt="_images/paper-graphic.png" src="_images/paper-graphic.png" style="width: 80%;" /></a>
 </div>
 </div>
 <div class="section" id="the-code-structure-of-auto-mech">
 <h2>The Code Structure of Auto Mech<a class="headerlink" href="#the-code-structure-of-auto-mech" title="Permalink to this headline">¶</a></h2>
-<dl class="simple">
-<dt>Key workhorses:</dt><dd><ul class="simple">
-<li><p><a class="reference internal" href="repos/MESS/docs/index.html"><span class="doc">MESS</span></a>: workhorse for
-kinetics/thermodynamics</p></li>
-<li><p>elstruct: workhorse for electronic structure (or, rather, an interface to
-the workhorses, which are the electronic structure codes)</p></li>
+<p>The overall workflow of Auto Mech is driven by
+<a class="reference internal" href="repos/moldriver/docs/index.html"><span class="doc">moldriver</span></a>,
+whose overarching task is to invoke electronic structure calculations through
+the
+<a class="reference internal" href="repos/elstruct/docs/index.html"><span class="doc">elstruct</span></a>
+interface and feed the results into
+<a class="reference internal" href="repos/MESS/docs/index.html"><span class="doc">MESS</span></a>
+for calculating partition functions and kinetic rates.</p>
+<p>Data generated during the workflow is written to a file system database using
+the
+<a class="reference internal" href="repos/autofile/docs/index.html"><span class="doc">autofile</span></a>
+module, which also provides functions for retrieving previously stored data.</p>
+<p>The aforementioned codes are supported by several helper libraries:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="repos/automol/docs/index.html"><span class="doc">automol</span></a> provides routines for
+manipulating and interconverting between molecular descriptors (Cartesian
+geometry, z-matrix, molecular graph, InChI, SMILES, molecular formula)</p></li>
+<li><p><a class="reference internal" href="repos/interfaces/docs/index.html"><span class="doc">interfaces</span></a> contains a hodge-podge
+of interaces to various programs</p></li>
+<li><p><a class="reference internal" href="repos/autoparse/docs/index.html"><span class="doc">autoparse</span></a> is a low-level parsing
+library employed by the various I/O modules</p></li>
 </ul>
-</dd>
-<dt>Driver:</dt><dd><ul class="simple">
-<li><p>moldriver</p></li>
-</ul>
-</dd>
-<dt>Libraries:</dt><dd><ul class="simple">
-<li><p>autofile: file system</p></li>
-<li><p>automol: molecular descriptors</p></li>
-<li><p>autoparse: parsing</p></li>
-<li><p>interfaces: a hodge-podge of interaces to various programs</p></li>
-</ul>
-</dd>
-</dl>
+</div></blockquote>
+<p>The following schematic summarizes this general overview.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="_images/code-structure.png"><img alt="_images/code-structure.png" src="_images/code-structure.png" style="width: 80%;" /></a>
+</div>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="repos/moldriver/docs/index.html">moldriver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repos/autofile/docs/index.html">autofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="repos/MESS/docs/index.html">MESS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="repos/autofile/docs/index.html">Welcome to autofile’s documentation!</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="repos/autofile/docs/api.html">autofile interface</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="repos/autoparse/docs/index.html">autoparse</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="repos/autoparse/docs/api.html">autoparse interface</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="repos/elstruct/docs/index.html">elstruct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repos/automol/docs/index.html">automol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repos/autoparse/docs/index.html">autoparse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repos/interfaces/docs/index.html">interfaces</a></li>
 </ul>
 </div>
 </div>
@@ -107,16 +112,20 @@ the workhorses, which are the electronic structure codes)</p></li>
 <h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="repos/moldriver/docs/index.html">moldriver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repos/autofile/docs/index.html">autofile</a></li>
 <li class="toctree-l1"><a class="reference internal" href="repos/MESS/docs/index.html">MESS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="repos/autofile/docs/index.html">Welcome to autofile’s documentation!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repos/elstruct/docs/index.html">elstruct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repos/automol/docs/index.html">automol</a></li>
 <li class="toctree-l1"><a class="reference internal" href="repos/autoparse/docs/index.html">autoparse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repos/interfaces/docs/index.html">interfaces</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="#">Documentation overview</a><ul>
-      <li>Next: <a href="repos/MESS/docs/index.html" title="next chapter">MESS</a></li>
+      <li>Next: <a href="repos/moldriver/docs/index.html" title="next chapter">moldriver</a></li>
   </ul></li>
 </ul>
 </div>
