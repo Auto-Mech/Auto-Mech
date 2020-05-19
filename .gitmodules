@@ -1,21 +1,21 @@
 [submodule "repos/MESS"]
 	path = repos/MESS
-	url = git@github.com/avcopan/MESS.git
+	url = https://github.com/Auto-Mech/MESS.git
 [submodule "repos/moldriver"]
 	path = repos/moldriver
-	url = git@github.com/avcopan/moldriver.git
+	url = https://github.com/Auto-Mech/moldriver.git
 [submodule "repos/automol"]
 	path = repos/automol
-	url = git@github.com/avcopan/automol.git
+	url = https://github.com/Auto-Mech/automol.git
 [submodule "repos/autofile"]
 	path = repos/autofile
-	url = git@github.com/avcopan/autofile.git
+	url = https://github.com/Auto-Mech/autofile.git
 [submodule "repos/autoparse"]
 	path = repos/autoparse
-	url = git@github.com/avcopan/autoparse.git
+	url = https://github.com/Auto-Mech/autoparse.git
 [submodule "repos/elstruct"]
 	path = repos/elstruct
-	url = git@github.com/avcopan/elstruct.git
+	url = https://github.com/Auto-Mech/elstruct.git
 [submodule "repos/interfaces"]
 	path = repos/interfaces
-	url = git@github.com/avcopan/interfaces.git
+	url = https://github.com/Auto-Mech/interfaces.git
