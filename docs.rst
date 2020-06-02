@@ -10,7 +10,7 @@ Overview
 .. The syntax for linking to other documentation is :doc:`text <path/to>`
 
 The overall workflow of Auto Mech is driven by
-:doc:`moldriver <./repos/moldriver/docs/index>`,
+:doc:`moldriver <./repos/moldriver/docs/a>`,
 whose overarching task is to invoke electronic structure calculations through
 the
 :doc:`elstruct <./repos/elstruct/docs/index>`
@@ -40,7 +40,7 @@ Modules
 .. toctree::
     :maxdepth: 1
 
-    repos/moldriver/docs/index
+    repos/moldriver/docs/a
 
     repos/autofile/docs/index
     repos/MESS/docs/index
